@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My GitHub Pages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My GitHub Pages!</h1>
+        <p>This project is an ebook store management system built using SQLite and Python. Below is an overview of the project and its functionality:</p>
+        <ul>
+            <li>Connect to and manage an SQLite database for storing ebook information.</li>
+            <li>CRUD operations to enter, update, delete, and search books.</li>
+            <li>Predefined dataset to get started quickly.</li>
+        </ul>
+
+        <h2>Project Repository</h2>
+        <p>You can find the full source code and instructions in my GitHub repository:</p>
+        <p><a href="https://github.com/ano-jayden/ebooks.io" target="_blank">GitHub Repository: ano-jayden/ebooks.io</a></p>
+
+        <h2>Getting Started</h2>
+        <ol>
+            <li>Clone the repository using <code>git clone https://github.com/ano-jayden/ebooks.io.git</code>.</li>
+            <li>Navigate to the project directory and follow the README instructions.</li>
+            <li>Run the Python script to interact with the ebook store database.</li>
+        </ol>
+
+        <h2>Database Initialization</h2>
+        <p>The SQLite database is initialized with the following structure:</p>
+        <pre>
+CREATE TABLE book (
+    id INT PRIMARY KEY,
+    title VARCHAR(255),
+    author VARCHAR(255),
+    qty INT
+);
+
+INSERT INTO book (id, title, author, qty) VALUES
+(3001, 'A Tale of Two Cities', 'Charles Dickens', 30),
+(3002, 'Harry Potter and the Philosopher''s Stone', 'J.K. Rowling', 40),
+(3003, 'The Lion, the Witch and the Wardrobe', 'C. S. Lewis', 25),
+(3004, 'The Lord of the Rings', 'J.R.R Tolkien', 37),
+(3005, 'Alice in Wonderland', 'Lewis Carroll', 12);
+        </pre>
+
+        <h2>Features</h2>
+        <p>The application supports the following features:</p>
+        <ul>
+            <li>Adding new books.</li>
+            <li>Updating book details.</li>
+            <li>Deleting books from the database.</li>
+            <li>Searching for books by title or author.</li>
+        </ul>
+
+        <h2>Author</h2>
+        <p>Created by ano-jayden. Feel free to connect and collaborate!</p>
+    </div>
+</body>
+</html>
